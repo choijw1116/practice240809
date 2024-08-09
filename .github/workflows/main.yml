@@ -56,8 +56,8 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.REMOTE_PORT }}
-          source: "build/libs/demo-0.0.1-SNAPSHOT.jar"
-          target: "demo-0.0.1-SNAPSHOT.jar"
+          source: "build/libs/practice240809-0.0.1-SNAPSHOT.jar"
+          target: "practice240809-0.0.1-SNAPSHOT.jar"
 
       - name: restart spring project
         uses: appleboy/ssh-action@v1.0.3
