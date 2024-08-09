@@ -57,7 +57,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.REMOTE_PORT }}
           source: "build/libs/practice240809-0.0.1-SNAPSHOT.jar"
-          target: "practice240809-0.0.1-SNAPSHOT.jar"
+#target은 경로를 적어줘야하는데 파일이름을 적었어서 에러가 나는거였음
+          target: "build/libs/practice240809-0.0.1-SNAPSHOT.jar"
 
       - name: restart spring project
         uses: appleboy/ssh-action@v1.0.3
