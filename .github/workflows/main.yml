@@ -68,6 +68,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: ${{ secrets.REMOTE_PORT }}
           script: |
-            rm -rf /home/ubuntu/devops 
-            git clone https://github.com/ddarahakit2024/devops.git
-            bash /home/ubuntu/devops/deployment.sh
+            rm -rf /home/ubuntu/practice240809
+            git clone https://github.com/choijw1116/practice240809.git
+            bash /home/ubuntu/practice240809/deployment.sh
